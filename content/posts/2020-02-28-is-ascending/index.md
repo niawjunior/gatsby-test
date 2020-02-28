@@ -1,7 +1,7 @@
 ---
 title: "ตรวจสอบว่า ค่าที่อยู่ใน Array เรียงจาก น้อยไปมาก จริงหรือไม่"
 slug: is-ascending
-date: 2020-02-27
+date: 2020-02-28
 cover: ./cover.jpg
 generate-card: true
 imageShare: ./is-ascending-share.png
