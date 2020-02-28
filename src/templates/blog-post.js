@@ -14,6 +14,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   return (
     <Layout location={location}>
       <SEO
+        location={location}
         title={post.frontmatter.title}
         description={post.excerpt}
         cover={post.frontmatter.cover && post.frontmatter.cover.publicURL}

@@ -60,7 +60,7 @@ const NotFoundPage = props => {
 
   return (
     <Layout location={props.location} noCover={true}>
-      <SEO title="Page Not Found" />
+      <SEO location={props.location} title="Page Not Found" />
       <Wrapper>
         <MainTitle>404 Page Not Found</MainTitle>
         <Ghost role="img" aria-label="Ghost">
