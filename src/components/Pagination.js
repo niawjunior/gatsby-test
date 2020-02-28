@@ -1,0 +1,115 @@
+import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
+import { colors } from '../styles-config'
+
+const PaginationWrapper = styled.nav`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4em;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 770px;
+  padding: 25px 0;
+  margin: 0px auto;
+
+  @media (max-width: 780px) {
+    width: 90%;
+    padding: 25px 0;
+  }
+`
+
+const PageBtn = styled(Link)`
+  border-radius: 3px;
+  background-color: ${colors.blueAlpha};
+  border: 1px solid ${colors.blueAlpha};
+  color: ${colors.textLightest};
+  padding: 8px 20px;
+  min-width: 130px;
+  text-align: center;
+  &:hover {
+    background-color: ${colors.textLightest};
+    color: ${colors.blueAlpha};
+    border: 1px solid ${colors.blueAlpha};
+  }
+
+  @media (max-width: 564px) {
+    margin-top: 10px;
+    width: 100%;
+  }
+`
+
+const PreviousBtn = styled(PageBtn)`
+  order: 1;
+  @media (max-width: 564px) {
+    order: 2;
+  }
+`
+
+const NextBtn = styled(PageBtn)`
+  order: 3;
+`
+
+const Spacer = styled.span`
+  display: block;
+  min-width: 130px;
+
+  &.previous {
+    order: 1;
+  }
+
+  &.next {
+    order: 3;
+  }
+
+  @media (max-width: 564px) {
+    display: none;
+
+    &.previous {
+      order: 2;
+    }
+
+    &.next {
+      order: 3;
+    }
+  }
+`
+
+const PageInfo = styled.span`
+  order: 2;
+  padding: 1em 0;
+  @media (max-width: 564px) {
+    order: 1;
+  }
+`
+
+class Pagination extends React.Component {
+  render() {
+    const { currentPage, nbPages } = this.props
+    const previousUrl = currentPage === 2 ? '/' : `/pages/${currentPage - 1}`
+
+    return (
+      <PaginationWrapper>
+        {currentPage !== 1 ? (
+          <PreviousBtn to={previousUrl}>‹ โพสที่ใหม่กว่า</PreviousBtn>
+        ) : (
+          <Spacer className="previous" />
+        )}
+
+        <PageInfo>
+          หน้าที่ {currentPage} จาก {nbPages}
+        </PageInfo>
+
+        {currentPage < nbPages ? (
+          <NextBtn to={`/pages/${currentPage + 1}`}>โพสที่เก่ากว่า ›</NextBtn>
+        ) : (
+          <Spacer className="next" />
+        )}
+      </PaginationWrapper>
+    )
+  }
+}
+
+export default Pagination

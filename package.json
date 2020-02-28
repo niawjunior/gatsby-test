@@ -1,0 +1,94 @@
+{
+  "name": "jskhamkham",
+  "version": "0.0.0-development",
+  "description": "เว็บไซต์อย่างเป็นทางการของ JS ขำๆ",
+  "keywords": [
+    "blog",
+    "gatsby"
+  ],
+  "homepage": "https://github.com/niawjunior/jskhamkham",
+  "bugs": {
+    "url": "https://github.com/niawjunior/jskhamkham/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niawjunior/jskhamkham.git"
+  },
+  "license": "MIT",
+  "author": "JS ขำๆ <jskhamkham@gmail.com>",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "clean": "gatsby clean",
+    "format": "prettier --write 'src/**/*.js' 'data/siteConfig.js' 'gatsby-*.js' 'scripts/*.js'",
+    "generatePostPreviewImages": "./scripts/generatePostPreviewImages.js",
+    "serve": "gatsby serve",
+    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
+    "production": "npm run clean && npm run build && npm run serve",
+    "semantic-release": "semantic-release",
+    "start": "gatsby develop",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "bin": {
+    "generatePostPreviewImages": "./scripts/generatePostPreviewImages.js"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.5.1",
+    "@mdx-js/react": "^1.5.1",
+    "babel-plugin-styled-components": "^1.10.6",
+    "disqus-react": "^1.0.7",
+    "gatsby": "^2.15.36",
+    "gatsby-image": "^2.2.27",
+    "gatsby-plugin-compile-es6-packages": "^2.1.0",
+    "gatsby-plugin-google-analytics": "^2.1.21",
+    "gatsby-plugin-manifest": "^2.2.21",
+    "gatsby-plugin-mdx": "^1.0.51",
+    "gatsby-plugin-nprogress": "2.1.19",
+    "gatsby-plugin-offline": "^3.0.14",
+    "gatsby-plugin-page-creator": "^2.1.25",
+    "gatsby-plugin-react-helmet": "^3.1.11",
+    "gatsby-plugin-sharp": "^2.2.29",
+    "gatsby-plugin-styled-components": "^3.1.17",
+    "gatsby-remark-autolink-headers": "^2.1.14",
+    "gatsby-remark-copy-linked-files": "^2.1.26",
+    "gatsby-remark-images": "^3.1.26",
+    "gatsby-remark-prismjs": "^3.3.30",
+    "gatsby-remark-responsive-iframe": "^2.2.23",
+    "gatsby-remark-smartypants": "^2.1.12",
+    "gatsby-source-filesystem": "^2.1.31",
+    "gatsby-transformer-remark": "^2.6.28",
+    "gatsby-transformer-sharp": "^2.2.21",
+    "lodash": "^4.17.15",
+    "prismjs": "^1.19.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1",
+    "styled-components": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.14.2",
+    "husky": "4.2.3",
+    "lint-staged": "10.0.3",
+    "prettier": "^1.18.2",
+    "puppeteer": "^1.17.0",
+    "semantic-release": "^15.13.18",
+    "yaml": "^1.6.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "npm run format"
+    ]
+  },
+  "peerDependencies": {
+    "gatsby": "^2.15.0",
+    "react": "^16.10.0",
+    "react-dom": "^16.10.0"
+  }
+}
