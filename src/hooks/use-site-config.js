@@ -14,6 +14,7 @@ const useSiteMetadata = () => {
           siteDescription
           disqusShortname
           disqusSiteUrl
+          facebookAppID
           defaultLang
           headerTitle
           headerLinksIcon

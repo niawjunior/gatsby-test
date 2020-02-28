@@ -5,7 +5,13 @@ import useSiteMetadata from '../hooks/use-site-config'
 
 const SEO = props => {
   const { isBlogPost, path = '', lang = 'th' } = props
-  const { siteTitle, siteUrl, siteCover, siteDescription } = useSiteMetadata()
+  const {
+    siteTitle,
+    siteUrl,
+    siteCover,
+    siteDescription,
+    facebookAppID,
+  } = useSiteMetadata()
 
   const title = props.title
     ? `${props.title} | ${siteTitle}`
@@ -14,9 +20,13 @@ const SEO = props => {
     ? siteUrl.substring(0, siteUrl.length - 1)
     : siteUrl
   const imagePath = props.imageShare || props.cover || withPrefix(siteCover)
-  const image = `${formatedSiteUrl}${imagePath}`
+  const image =
+    window.location.pathname === '/'
+      ? `${formatedSiteUrl}/og.png`
+      : `${formatedSiteUrl}${imagePath}`
   const description = props.description || siteDescription
 
+  console.log(image)
   return (
     <Helmet title={title}>
       {/* General tags */}
@@ -30,6 +40,7 @@ const SEO = props => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
+      <meta property="fb:app_id" content={facebookAppID} />
     </Helmet>
   )
 }

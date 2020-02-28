@@ -15,6 +15,7 @@ module.exports = {
   
   `,
   facebookPage: 'https://facebook.com/JSKhamKham',
+  facebookAppID: '789333911557524',
   siteUrl: 'https://www.jskhamkham.com/',
   disqusSiteUrl: 'https://www.jskhamkham.com/',
   pathPrefix: '/',
