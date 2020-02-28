@@ -71,6 +71,7 @@ const PostsListItem = props => {
       <section>
         <Excerpt dangerouslySetInnerHTML={{ __html: excerpt }} />
       </section>
+      <br />
       <footer>
         <FooterLine>
           <ReadingTime min={timeToRead} />

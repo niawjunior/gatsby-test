@@ -10,8 +10,12 @@ const ListContainer = styled.div`
 
 const TagListItemLink = styled(Link)`
   text-transform: uppercase;
-  color: ${colors.postMetadata};
+  /* color: ${colors.postMetadata}; */
 
+    color: #697980;
+    border-radius: 3px;
+    padding: .15rem;
+    background-color: #eae8e8;
   &:not(:first-child) {
     margin-left: 0.3rem;
   }
