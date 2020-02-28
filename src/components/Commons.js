@@ -73,7 +73,5 @@ export const ReadingTime = ({ min }) => {
     text-transform: uppercase;
     color: ${colors.postMetadata};
   `
-  return (
-    <ReadingTimeContainer>ใช้เวลา ในการอ่าน {min} นาที</ReadingTimeContainer>
-  )
+  return <ReadingTimeContainer>{min} min read</ReadingTimeContainer>
 }

@@ -13,21 +13,26 @@ const PageTitle = styled.h1`
   padding-bottom: 10px;
 `
 
-const Tags = ({ pageContext, location }) => {
-  const pageTitle = `#${pageContext.tag}`
-  const posts = get(this, 'props.data.posts.edges')
+class Tags extends React.Component {
+  render() {
+    const pageTitle = `#${this.props.pageContext.tag}`
+    const posts = get(this, 'props.data.posts.edges')
 
-  return (
-    <Layout location={location}>
-      <SEO location={location} title={`Top blog posts on ${pageContext.tag}`} />
-      <Hero title={pageTitle} />
+    return (
+      <Layout location={this.props.location}>
+        <SEO
+          location={this.props.location}
+          title={`Top blog posts on ${this.props.pageContext.tag}`}
+        />
+        <Hero title={pageTitle} />
 
-      <Wrapper>
-        <PageTitle>โพสทั้งหมด ใน Tag {pageContext.tag}</PageTitle>
-        <PostsList posts={posts} />
-      </Wrapper>
-    </Layout>
-  )
+        <Wrapper>
+          <PageTitle>โพสทั้งหมด ใน Tag {this.props.pageContext.tag}</PageTitle>
+          <PostsList posts={posts} />
+        </Wrapper>
+      </Layout>
+    )
+  }
 }
 
 export default Tags

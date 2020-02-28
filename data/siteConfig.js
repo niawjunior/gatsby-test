@@ -10,8 +10,8 @@ module.exports = {
   <br/><br/>
   ช่องทางติดตาม เพิ่มเติม 
   <br/>
-  <p><a href="https://niawjunior.github.io/blog/" target="_blank">website</a></p>
-  <p><a href="https://medium.com/@njth" target="_blank">medium</a></p>
+  <p><a href="https://niawjunior.github.io/blog/" target="_blank">Website</a></p>
+  <p><a href="https://medium.com/@njth" target="_blank">Medium</a></p>
   
   `,
   facebookPage: 'https://facebook.com/JSKhamKham',
