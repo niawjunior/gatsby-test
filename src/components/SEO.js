@@ -20,10 +20,7 @@ const SEO = props => {
     ? siteUrl.substring(0, siteUrl.length - 1)
     : siteUrl
   const imagePath = props.imageShare || props.cover || withPrefix(siteCover)
-  const image =
-    window.location.pathname === '/'
-      ? `${formatedSiteUrl}/og.png`
-      : `${formatedSiteUrl}${imagePath}`
+  const image = `${formatedSiteUrl}${imagePath}`
   const description = props.description || siteDescription
 
   return (
