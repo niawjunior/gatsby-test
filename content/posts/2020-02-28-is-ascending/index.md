@@ -12,6 +12,8 @@ tags:
     - javascript
 ---
 
+เขียน functin เพื่อ ตรวจสอบว่า ค่าที่อยู่ใน Array นั้น ถูกเรียงจาก น้อยไปมาก จริงหรือไม่
+
 ``` javascript
 
 const isAscending = arr => arr.every((n, i) => i === 0 || arr[i-1] < n)
