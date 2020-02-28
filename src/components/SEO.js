@@ -26,7 +26,6 @@ const SEO = props => {
       : `${formatedSiteUrl}${imagePath}`
   const description = props.description || siteDescription
 
-  console.log(image)
   return (
     <Helmet title={title}>
       {/* General tags */}
