@@ -20,7 +20,10 @@ class Tags extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <SEO title={`Top blog posts on ${this.props.pageContext.tag}`} />
+        <SEO
+          location={this.props.location}
+          title={`Top blog posts on ${this.props.pageContext.tag}`}
+        />
         <Hero title={pageTitle} />
 
         <Wrapper>

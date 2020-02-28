@@ -16,7 +16,7 @@ class BlogList extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <SEO />
+        <SEO location={this.props.location} />
         <Hero title={title} subTitle={description} />
 
         <Wrapper>

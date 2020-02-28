@@ -14,6 +14,7 @@ const Page = ({ data, location }) => {
   return (
     <Layout location={location}>
       <SEO
+        location={location}
         title={page.frontmatter.title}
         description={page.excerpt}
         path={page.frontmatter.slug}
