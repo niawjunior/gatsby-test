@@ -1,26 +1,22 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import PostsListItem from './PostsListItem'
 
-class PostsList extends React.Component {
-  render() {
-    const { posts } = this.props
-
-    return (
-      <Fragment>
-        {posts.map(post => {
-          const props = {
-            title: post.node.frontmatter.title,
-            excerpt: post.node.excerpt,
-            slug: post.node.frontmatter.slug,
-            timeToRead: post.node.timeToRead,
-            language: post.node.frontmatter.language || 'th',
-            tags: post.node.frontmatter.tags || [],
-          }
-          return <PostsListItem key={props.slug} {...props} />
-        })}
-      </Fragment>
-    )
-  }
+const PostsList = ({ posts = [] }) => {
+  return (
+    <>
+      {posts.map(post => {
+        const props = {
+          title: post.node.frontmatter.title,
+          excerpt: post.node.excerpt,
+          slug: post.node.frontmatter.slug,
+          timeToRead: post.node.timeToRead,
+          language: post.node.frontmatter.language || 'th',
+          tags: post.node.frontmatter.tags || [],
+        }
+        return <PostsListItem key={props.slug} {...props} />
+      })}
+    </>
+  )
 }
 export default PostsList
