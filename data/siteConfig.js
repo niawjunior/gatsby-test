@@ -4,21 +4,10 @@ module.exports = {
   authorName: 'JS ขำๆ',
   authorAvatarAdminOne: 'admin1.jpg',
   defaultLang: 'th',
-  authorDescriptionAdminOne: `
-  สวัสดีครับ ผม เนี้ยว @admin1 จากเพจ <a href="https://facebook.com/JSKhamKham" target="_blank">JS ขำๆ</a>.
-  ชื่นชอบในการเขียน JavaScript และ เทคโนโลยีใหม่ๆ งานดิเรก นอกจากเขียนโค้ด ชอบดู มวยสากล, mma, นอนดู netflix ฝึกภาษา และ ชอบแมว 
-  <br/><br/>
-  ช่องทางติดตาม เพิ่มเติม 
-  <br/>
-  <p><a href="https://niawjunior.github.io/blog/" target="_blank">Website</a></p>
-  <p><a href="https://medium.com/@njth" target="_blank">Medium</a></p>
-  
-  `,
+  authorDescriptionAdminOne:
+    'ชื่นชอบในการเขียน JavaScript และ เทคโนโลยีใหม่ๆ งานดิเรก นอกจากเขียนโค้ด ชอบดู มวยสากล, mma, นอนดู netflix ฝึกภาษา และ ชอบแมว ',
   authorAvatarAdminTwo: 'admin2.jpg',
-  authorDescriptionAdminTwo: `
-  <p>สวัสดีครับ ผม โชค @admin2 จากเพจ <a href="https://facebook.com/JSKhamKham" target="_blank">JS ขำๆ</a>.</p>
-  <p>สโลแกน งานหลักทำเพจ งานอดิเรก พาแฟนไปกินข้าว</p>
-  `,
+  authorDescriptionAdminTwo: 'สโลแกน งานหลักทำเพจ งานอดิเรก พาแฟนไปกินข้าว',
   facebookPage: 'https://facebook.com/JSKhamKham',
   facebookAppID: '789333911557524',
   siteUrl: 'https://www.jskhamkham.com/',

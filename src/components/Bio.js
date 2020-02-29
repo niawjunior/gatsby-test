@@ -66,13 +66,15 @@ const Bio = ({ author }) => {
     authorDescriptionAdminTwo,
   } = useSiteMetadata()
 
-  console.log(author)
   const authorAvatar =
     author === 'admin1' ? authorAvatarAdminOne : authorAvatarAdminTwo
   const { fixed } = useSiteImages(authorAvatar)
 
   const bioAuthor =
     author === 'admin1' ? authorDescriptionAdminOne : authorDescriptionAdminTwo
+
+  const bioSub = author === 'admin1' ? 'เนี้ยว @admin1' : 'โชค @admin2'
+
   return (
     <BioWrapper>
       <figure className="author-image">
@@ -84,9 +86,23 @@ const Bio = ({ author }) => {
       </figure>
       <section>
         <h4>เกี่ยวกับ ผู้เขียน</h4>
-        <BioText
-          dangerouslySetInnerHTML={{ __html: `<div> ${bioAuthor} </div>` }}
-        />
+        <BioText>
+          <div>
+            <p>
+              สวัสดีครับ ผม {bioSub} จากเพจ{' '}
+              <a
+                href="https://facebook.com/JSKhamKham"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                JS ขำๆ
+              </a>
+              .
+            </p>
+            <br />
+            <p>{bioAuthor}</p>
+          </div>
+        </BioText>
       </section>
     </BioWrapper>
   )
