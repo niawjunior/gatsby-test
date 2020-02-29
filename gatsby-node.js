@@ -28,10 +28,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               slug
               tags
               language
+              author
               cover {
                 publicURL
               }
-              author
             }
             timeToRead
             excerpt

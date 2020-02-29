@@ -95,8 +95,17 @@ const BlogPostShareImage = props => {
   const post = props.data.post
   const { width, height } = props.pageContext
   const heroImg = post.frontmatter.cover && post.frontmatter.cover.publicURL
-  const { siteCover, authorAvatarAdminOne, headerTitle } = useSiteMetadata()
-  const { fixed } = useSiteImages(authorAvatarAdminOne)
+  const {
+    siteCover,
+    authorAvatarAdminOne,
+    authorAvatarAdminTwo,
+    headerTitle,
+  } = useSiteMetadata()
+  const authorAvatar =
+    post.frontmatter.author === 'admin1'
+      ? authorAvatarAdminOne
+      : authorAvatarAdminTwo
+  const { fixed } = useSiteImages(authorAvatar)
   const siteCoverPath = useSiteImages(siteCover).fluid.src
   const imgPreview = heroImg || withPrefix(siteCover)
   return (
@@ -127,6 +136,7 @@ export const pageQuery = graphql`
       timeToRead
       frontmatter {
         title
+        author
         cover {
           publicURL
         }
