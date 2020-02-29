@@ -57,10 +57,21 @@ const BioText = styled(Text)`
   }
 `
 
-const Bio = () => {
-  const { authorAvatar, authorName, authorDescription } = useSiteMetadata()
+const Bio = ({ author }) => {
+  const {
+    authorAvatarAdminOne,
+    authorAvatarAdminTwo,
+    authorName,
+    authorDescriptionAdminOne,
+    authorDescriptionAdminTwo,
+  } = useSiteMetadata()
+
+  const authorAvatar =
+    author === 'admin1' ? authorAvatarAdminOne : authorAvatarAdminTwo
   const { fixed } = useSiteImages(authorAvatar)
 
+  const bioAuthor =
+    author === 'admin1' ? authorDescriptionAdminOne : authorDescriptionAdminTwo
   return (
     <BioWrapper>
       <figure className="author-image">
@@ -72,7 +83,7 @@ const Bio = () => {
       </figure>
       <section>
         <h4>เกี่ยวกับ ผู้เขียน</h4>
-        <BioText dangerouslySetInnerHTML={{ __html: authorDescription }} />
+        <BioText dangerouslySetInnerHTML={{ __html: bioAuthor }} />
       </section>
     </BioWrapper>
   )

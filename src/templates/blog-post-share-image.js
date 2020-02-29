@@ -95,8 +95,8 @@ const BlogPostShareImage = props => {
   const post = props.data.post
   const { width, height } = props.pageContext
   const heroImg = post.frontmatter.cover && post.frontmatter.cover.publicURL
-  const { siteCover, authorAvatar, headerTitle } = useSiteMetadata()
-  const { fixed } = useSiteImages(authorAvatar)
+  const { siteCover, authorAvatarAdminOne, headerTitle } = useSiteMetadata()
+  const { fixed } = useSiteImages(authorAvatarAdminOne)
   const siteCoverPath = useSiteImages(siteCover).fluid.src
   const imgPreview = heroImg || withPrefix(siteCover)
   return (

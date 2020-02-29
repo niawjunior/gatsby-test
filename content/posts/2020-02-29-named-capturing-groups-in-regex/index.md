@@ -7,6 +7,7 @@ generate-card: true
 imageShare: ./named-capturing-groups-in-regex-share.png
 language: th
 disqus: true
+author: admin1
 tags:
     - regex
     - javascript

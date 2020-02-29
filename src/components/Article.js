@@ -31,7 +31,7 @@ const Article = ({ post }) => {
         <Video videoSrcURL={post.frontmatter.videoSrcURL} />
       )}
       <ArticleFooter>
-        <Bio />
+        <Bio author={post.frontmatter.author} />
       </ArticleFooter>
     </ArticleWrapper>
   )

@@ -31,6 +31,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               cover {
                 publicURL
               }
+              author
             }
             timeToRead
             excerpt

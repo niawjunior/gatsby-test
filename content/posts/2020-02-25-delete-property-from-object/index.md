@@ -7,6 +7,7 @@ generate-card: true
 imageShare: ./delete-property-from-object-share.png
 language: th
 disqus: true
+author: admin1
 tags:
     - object
     - javascript

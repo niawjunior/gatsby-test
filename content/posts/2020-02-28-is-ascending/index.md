@@ -7,6 +7,7 @@ generate-card: true
 imageShare: ./is-ascending-share.png
 language: th
 disqus: true
+author: admin1
 tags:
     - sorting
     - javascript

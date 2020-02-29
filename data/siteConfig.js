@@ -2,9 +2,9 @@ module.exports = {
   siteTitle: 'JS ขำๆ',
   siteDescription: 'แหล่งเรียนรู้ สำหรับคนชอบเขียน จาวาสคริปต์',
   authorName: 'JS ขำๆ',
-  authorAvatar: 'avatar.jpg',
+  authorAvatarAdminOne: 'admin1.jpg',
   defaultLang: 'th',
-  authorDescription: `
+  authorDescriptionAdminOne: `
   สวัสดีครับ ผม เนี้ยว @admin1 จากเพจ <a href="https://facebook.com/JSKhamKham" target="_blank">JS ขำๆ</a>.
   ชื่นชอบในการเขียน JavaScript และ เทคโนโลยีใหม่ๆ งานดิเรก นอกจากเขียนโค้ด ชอบดู มวยสากล, mma, นอนดู netflix ฝึกภาษา และ ชอบแมว 
   <br/><br/>
@@ -13,6 +13,11 @@ module.exports = {
   <p><a href="https://niawjunior.github.io/blog/" target="_blank">Website</a></p>
   <p><a href="https://medium.com/@njth" target="_blank">Medium</a></p>
   
+  `,
+  authorAvatarAdminTwo: 'admin2.jpg',
+  authorDescriptionAdminTwo: `
+  <p>สวัสดีครับ ผม โชค @admin2 จากเพจ <a href="https://facebook.com/JSKhamKham" target="_blank">JS ขำๆ</a>.</p>
+  <p>สโลแกน งานหลักทำเพจ งานอดิเรก พาแฟนไปกินข้าว</p>
   `,
   facebookPage: 'https://facebook.com/JSKhamKham',
   facebookAppID: '789333911557524',
@@ -25,7 +30,7 @@ module.exports = {
   theme_color: '#222222',
   display: 'standalone',
   icon: 'content/images/logo.png',
-  postsPerPage: 6,
+  postsPerPage: 5,
   disqusShortname: 'js-kham',
   headerTitle: 'JS ขำๆ',
   headerLinksIcon: '',

@@ -56,6 +56,7 @@ export const pageQuery = graphql`
         slug
         language
         videoSrcURL
+        author
         tags
         cover {
           publicURL

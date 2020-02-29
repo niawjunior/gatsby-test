@@ -7,6 +7,7 @@ generate-card: true
 imageShare: ./destructuring-in-javascript-share.png
 language: th
 disqus: true
+author: admin1
 tags:
     - destructuring
     - javascript

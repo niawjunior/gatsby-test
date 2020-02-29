@@ -6,6 +6,7 @@ language: th
 published: false
 unlisted: true
 tags: ['ทดสอบ', 'สองภาษา']
+author: admin1
 translations:
   - link: '/test-multi-language-en'
     language: 'อังกฤษ'

@@ -9,8 +9,10 @@ const useSiteMetadata = () => {
           siteUrl
           siteCover
           authorName
-          authorAvatar
-          authorDescription
+          authorAvatarAdminOne
+          authorDescriptionAdminOne
+          authorAvatarAdminTwo
+          authorDescriptionAdminTwo
           siteDescription
           disqusShortname
           disqusSiteUrl
