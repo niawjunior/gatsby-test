@@ -13,6 +13,13 @@ module.exports = {
     `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-sitemap`,
     {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `tomato`,
+        showSpinner: false,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: 'posts',
