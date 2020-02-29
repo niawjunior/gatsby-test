@@ -28,5 +28,5 @@ const removeProperty = prop => ({ [prop]: _, ...rest }) => rest
 
 const removePassword = removeProperty("password")
 
-console.log(removePassword(user))
+console.log(removePassword(user)) // { id: 1, name: 'Anthony' }
 ```

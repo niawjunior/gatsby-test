@@ -49,7 +49,7 @@ console.log(matchNull); // null
 console.log(matchNull.length); // Error: Cannot read property 'length' of null
 ```
 
-> จะเห็นได้ว่า เหตุการณ์ ที่ 1 และ 2 return ค่าเป็น array ส่วน เเหตุการณ์ ที่ 3 return ค่า เป็น null ซึ่งมีโอกาส ทำให้เกิดข้อผิดพลาดได้ เพื่อป้องกันข้อผิดพลาด ควรเพิ่ม || [] ไว้เสมอ
+> จะเห็นได้ว่า เหตุการณ์ ที่ 1 และ 2 return ค่าเป็น array ส่วน เหตุการณ์ ที่ 3 return ค่า เป็น null ซึ่งมีโอกาส ทำให้เกิดข้อผิดพลาดได้ เพื่อป้องกันข้อผิดพลาด ควรเพิ่ม || [] ไว้เสมอ
 
 ``` javascript
 let match = str.match(regexp) || [];

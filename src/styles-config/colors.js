@@ -23,6 +23,7 @@ export default {
   primary: colors.grey500,
   primaryAlpha: `rgba(32, 35, 42, 0.85)`,
   blueAlpha: `rgba(89, 101, 239, 0.95)`,
+  lightGreen: `rgba(5, 227, 104, 0.95)`,
   text: colors.grey500,
   background: '#f4f8fb',
   backgroundArticle: colors.white,

@@ -10,12 +10,11 @@ const ListContainer = styled.div`
 
 const TagListItemLink = styled(Link)`
   text-transform: uppercase;
-  /* color: ${colors.postMetadata}; */
-    font-size: 12px;
-    color: #697980;
-    border-radius: 2px;
-    padding: 0.1rem 0.2rem 0.1rem 0.2rem;
-    background-color: #eae8e8;
+  font-size: 12px;
+  color: #697980;
+  border-radius: 2px;
+  padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+  background-color: #eae8e8;
   &:not(:first-child) {
     margin-left: 0.3rem;
   }
@@ -30,6 +29,11 @@ const TagListItemLink = styled(Link)`
 
 const TagListItem = styled.span`
   text-transform: uppercase;
+  font-size: 12px;
+  color: #697980;
+  border-radius: 2px;
+  padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+  background-color: #eae8e8;
   color: ${colors.postMetadata};
   &:not(:first-child) {
     margin-left: 0.3rem;
