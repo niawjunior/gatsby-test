@@ -13,7 +13,6 @@ class BlogList extends React.Component {
     const { title, description } = this.props.data.site.siteMetadata
     const posts = this.props.data.posts.edges
     const { pageContext } = this.props
-
     return (
       <Layout location={this.props.location}>
         <SEO location={this.props.location} />
@@ -60,6 +59,7 @@ export const pageQuery = graphql`
             tags
             language
             slug
+            date
           }
         }
       }
