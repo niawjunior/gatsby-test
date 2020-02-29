@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Bio from './Bio'
 import Content from './Content'
-
+import Video from './Video'
 const ArticleWrapper = styled.article`
   padding: 0 30px 30px;
 
@@ -27,6 +27,9 @@ const Article = ({ post }) => {
         tags={post.frontmatter.tags}
         translations={post.frontmatter.translations}
       />
+      {post.frontmatter.videoSrcURL && (
+        <Video videoSrcURL={post.frontmatter.videoSrcURL} />
+      )}
       <ArticleFooter>
         <Bio />
       </ArticleFooter>
