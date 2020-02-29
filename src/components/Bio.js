@@ -66,6 +66,7 @@ const Bio = ({ author }) => {
     authorDescriptionAdminTwo,
   } = useSiteMetadata()
 
+  console.log(author)
   const authorAvatar =
     author === 'admin1' ? authorAvatarAdminOne : authorAvatarAdminTwo
   const { fixed } = useSiteImages(authorAvatar)
@@ -83,7 +84,9 @@ const Bio = ({ author }) => {
       </figure>
       <section>
         <h4>เกี่ยวกับ ผู้เขียน</h4>
-        <BioText dangerouslySetInnerHTML={{ __html: bioAuthor }} />
+        <BioText
+          dangerouslySetInnerHTML={{ __html: `<div> ${bioAuthor} </div>` }}
+        />
       </section>
     </BioWrapper>
   )
