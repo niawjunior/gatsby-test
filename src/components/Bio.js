@@ -75,6 +75,7 @@ const Bio = ({ author }) => {
 
   const bioSub = author === 'admin1' ? 'เนี้ยว @admin1' : 'โชค @admin2'
 
+  const bioSpecial = author === 'admin1' ? ' และ ผู้สร้างเว็บไซต์นี้' : ''
   return (
     <BioWrapper>
       <figure className="author-image">
@@ -97,7 +98,7 @@ const Bio = ({ author }) => {
               >
                 JS ขำๆ
               </a>
-              .
+              {bioSpecial}.
             </p>
             <br />
             <p>{bioAuthor}</p>
