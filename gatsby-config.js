@@ -10,6 +10,8 @@ module.exports = {
   },
   pathPrefix: config.pathPrefix,
   plugins: [
+    `gatsby-plugin-advanced-sitemap`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
