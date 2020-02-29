@@ -5,7 +5,7 @@ module.exports = {
   authorAvatarAdminOne: 'admin1.jpg',
   defaultLang: 'th',
   authorDescriptionAdminOne:
-    'ชื่นชอบในการเขียน JavaScript และ เทคโนโลยีใหม่ๆ งานดิเรก นอกจากเขียนโค้ด ชอบดู มวยสากล, mma, นอนดู netflix ฝึกภาษา และ ชอบแมว ',
+    'และ ผู้สร้างเว็บไซต์นี้ ชื่นชอบในการเขียน JavaScript และ เทคโนโลยีใหม่ๆ งานดิเรก นอกจากเขียนโค้ด ชอบดู มวยสากล, mma, นอนดู netflix ฝึกภาษา และ ชอบแมว ',
   authorAvatarAdminTwo: 'admin2.jpg',
   authorDescriptionAdminTwo: 'สโลแกน งานหลักทำเพจ งานอดิเรก พาแฟนไปกินข้าว',
   facebookPage: 'https://facebook.com/JSKhamKham',
