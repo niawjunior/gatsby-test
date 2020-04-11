@@ -23,10 +23,9 @@ tags:
 
 ## ตัวอย่าง ข้อดีของ ngrok
 - ใช้ demo เว็บไซต์ หรือ service ต่างๆได้ โดยที่ไม่ต้อง deploy ขึ้น server จริง
-- สร้าง webhook ได้จาก เครื่อง dev และ ทดสอบ mobile app ที่เชื่อมกับ backend ที่รัน อยู่บน local ได้
-- สามารถ กำหนด domain ที่ต้องการได้
-- รองรับบ websocket
-- สามารถ inspect ดู HTTP request และ response ที่เข้ามาได้
+- สามารถ กำหนด domain ที่ต้องการได้ (ไม่ฟรี)
+- รองรับ websocket
+- สามารถ inspect ดู HTTP request และ response ได้
 - เร็วส์ เพราะ ngrok tunnels รันอยู่บน HTTP/2
 
 ## ข้อแตกต่างของแต่ละ package
