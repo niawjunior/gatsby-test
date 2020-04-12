@@ -177,4 +177,4 @@ console.log(tyson) // Tyson fury
 console.log(deontay) // Deontay Wilder
 ```
 
-> สำหรับใครที่ชื่นชอบการเขียน JavaScript สามารถติดตาม เนื้อหาอื่นๆ เพิ่มเติมได้ที่ เพจ <a href="https://www.facebook.com/JSKhamKham/" target="_blank">JS ขำๆ</a>
+> สำหรับใครที่ชื่นชอบการเขียน JavaScript สามารถติดตาม เนื้อหาอื่นๆ เพิ่มเติมได้ที่ เพจ <a href="https://www.facebook.com/JSKhamKham/" rel="noreferrer" target="_blank">JS ขำๆ</a>

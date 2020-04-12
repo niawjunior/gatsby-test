@@ -29,7 +29,7 @@ tags:
 - เร็วส์ เพราะ ngrok tunnels รันอยู่บน HTTP/2
 
 ## ข้อแตกต่างของแต่ละ package
-ต้องบอกก่อนว่า ngrok มีทั้งแบบที่ ฟรี แล้วก็เสียตังค์นะครับ อ่านเพิ่มเติมได้ที่ <a href="https://ngrok.com/pricing" target="_blank">https://ngrok.com/pricing</a>
+ต้องบอกก่อนว่า ngrok มีทั้งแบบที่ ฟรี แล้วก็เสียตังค์นะครับ อ่านเพิ่มเติมได้ที่ <a rel="noreferrer" href="https://ngrok.com/pricing" target="_blank">https://ngrok.com/pricing</a>
 
 ![alt text](pricing.png)
 
@@ -37,7 +37,7 @@ tags:
 
 ![alt text](ngrok.png)
 
-1. ทำการโหลด ngrok <a href="https://dashboard.ngrok.com/get-started" target="_blank">https://dashboard.ngrok.com/get-started</a> (ต้องสมัครสมาชิกก่อน)
+1. ทำการโหลด ngrok <a href="https://dashboard.ngrok.com/get-started" rel="noreferrer" target="_blank">https://dashboard.ngrok.com/get-started</a> (ต้องสมัครสมาชิกก่อน)
 
 2. หลังจากโหลดเสร็จแล้ว ให้ทำการ unzip
 
