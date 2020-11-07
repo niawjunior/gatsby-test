@@ -119,7 +119,7 @@ const HeaderLinks = ({ headerLinks }) => {
 
 const BurgerButton = styled.button`
   z-index: 30;
-  margin-top: 20px;
+  top: 0px;
   position: relative;
   color: ${colors.textLightest};
   display: flex;
