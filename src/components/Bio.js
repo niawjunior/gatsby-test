@@ -45,6 +45,9 @@ const BioWrapper = styled.div`
     margin: -100px auto 0 auto;
     box-shadow: none;
   }
+  p > a {
+    color: ${colors.textLight};
+  }
 `
 
 const BioText = styled(Text)`

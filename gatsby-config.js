@@ -10,6 +10,7 @@ module.exports = {
   },
   pathPrefix: config.pathPrefix,
   plugins: [
+    `gatsby-plugin-dark-mode`,
     `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-sitemap`,
     {

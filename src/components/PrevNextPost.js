@@ -65,6 +65,14 @@ const PreviewContent = styled.div`
   }
 `
 
+const PostTitle = styled.h2`
+  color: ${colors.textTitle};
+`
+
+const PostBody = styled.p`
+  color: ${colors.textLight};
+`
+
 const PrevNextPost = props => {
   const { previous, next } = props
   const articles = [previous, next].filter(i => i).map(item => ({ node: item }))
@@ -92,13 +100,13 @@ const PrevNextPost = props => {
                 />
                 <PreviewContent>
                   <header>
-                    <h2>
+                    <PostTitle>
                       {defaultLang !== language && <Flag language={language} />}
                       {title}
-                    </h2>
+                    </PostTitle>
                   </header>
                   <section>
-                    <p>{excerpt}</p>
+                    <PostBody>{excerpt}</PostBody>
                   </section>
                   <footer>
                     <ReadingTime min={timeToRead} />

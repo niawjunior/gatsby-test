@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import useSiteMetadata from '../hooks/use-site-config'
 import { colors, media } from '../styles-config'
 import useSiteImages from '../hooks/use-site-images'
+import ThemeToggle from './ThemeToggler'
 
 const HeaderWrapper = styled.header`
   top: 0;
@@ -118,7 +119,7 @@ const HeaderLinks = ({ headerLinks }) => {
 
 const BurgerButton = styled.button`
   z-index: 30;
-  top: 0px;
+  top: 20px;
   position: relative;
   color: ${colors.textLightest};
   display: flex;
@@ -210,18 +211,21 @@ const Header = () => {
     : null
 
   return (
-    <HeaderWrapper>
-      <HeaderNav>
-        <HeaderLinkTitle to={`/`} aria-label={`View home page`}>
-          {iconSrc && <HeaderImage src={iconSrc} alt={siteTitle} />}
-          <HeaderLinkTitleContent>{headerTitle}</HeaderLinkTitleContent>
-        </HeaderLinkTitle>
-        <HeaderLinksContainer>
-          <HeaderLinks headerLinks={headerLinks} />
-        </HeaderLinksContainer>
-        <MobileHeader headerLinks={headerLinks} />
-      </HeaderNav>
-    </HeaderWrapper>
+    <>
+      <HeaderWrapper>
+        <HeaderNav>
+          <HeaderLinkTitle to={`/`} aria-label={`View home page`}>
+            {iconSrc && <HeaderImage src={iconSrc} alt={siteTitle} />}
+            <HeaderLinkTitleContent>{headerTitle}</HeaderLinkTitleContent>
+          </HeaderLinkTitle>
+          <HeaderLinksContainer>
+            <HeaderLinks headerLinks={headerLinks} />
+          </HeaderLinksContainer>
+          <MobileHeader headerLinks={headerLinks} />
+        </HeaderNav>
+        <ThemeToggle />
+      </HeaderWrapper>
+    </>
   )
 }
 

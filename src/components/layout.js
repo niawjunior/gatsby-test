@@ -20,7 +20,13 @@ class Template extends React.Component {
     const { children } = this.props
 
     return (
-      <>
+      <div
+        style={{
+          backgroundColor: 'var(--bg)',
+          color: 'var(--textNormal)',
+          transition: 'color 0.2s ease-out, background 0.2s ease-out',
+        }}
+      >
         <Helmet>
           <link
             href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
@@ -31,7 +37,7 @@ class Template extends React.Component {
         <Header />
         <SiteContent>{children}</SiteContent>
         <Footer />
-      </>
+      </div>
     )
   }
 }

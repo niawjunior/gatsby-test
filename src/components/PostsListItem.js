@@ -43,7 +43,7 @@ const Excerpt = styled.p`
 `
 
 const PostTitleLink = styled(Link)`
-  color: ${colors.primary};
+  color: ${colors.textTitle};
   &:hover {
     border-bottom: 1px dotted ${colors.primary};
   }

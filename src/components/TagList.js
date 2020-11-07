@@ -11,10 +11,10 @@ const ListContainer = styled.div`
 const TagListItemLink = styled(Link)`
   text-transform: uppercase;
   font-size: 12px;
-  color: #697980;
+  color: ${colors.postMetadata};
   border-radius: 2px;
   padding: 0.1rem 0.2rem 0.1rem 0.2rem;
-  background-color: #eae8e8;
+  background-color: ${colors.tagListItemLink};
   &:not(:first-child) {
     margin-left: 0.3rem;
   }
@@ -33,7 +33,7 @@ const TagListItem = styled.span`
   color: #697980;
   border-radius: 2px;
   padding: 0.1rem 0.2rem 0.1rem 0.2rem;
-  background-color: #eae8e8;
+  background-color: ${colors.tagListItemLink};
   color: ${colors.postMetadata};
   &:not(:first-child) {
     margin-left: 0.3rem;
@@ -56,7 +56,7 @@ class TagList extends React.Component {
                 <TagListItemLink to={`/tags/${tag}`}>{tag}</TagListItemLink>
               )}
               {noLink && <TagListItem to={`/tags/${tag}`}>{tag}</TagListItem>}
-              {i < tags.length - 1 ? ', ' : ''}
+              {i < tags.length - 1 ? ' ' : ''}
             </Fragment>
           )
         })}

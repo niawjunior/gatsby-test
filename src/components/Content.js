@@ -147,6 +147,17 @@ const ContentBody = styled.div`
       border-bottom: 2px solid ${colors.white};
     }
   }
+
+  blockquote {
+    background-color: ${colors.blockquote};
+  }
+
+  p > a {
+    color: ${colors.textLight};
+  }
+  a > a {
+    color: ${colors.textLight};
+  }
 `
 
 const Content = ({ content, date, tags, translations }) => {
