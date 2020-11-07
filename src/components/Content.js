@@ -155,7 +155,7 @@ const ContentBody = styled.div`
   p > a {
     color: ${colors.textLight};
   }
-  a > a {
+  a {
     color: ${colors.textLight};
   }
 `
