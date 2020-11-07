@@ -1,6 +1,7 @@
 ---
 title: 'TypeScript for JavaScript Programmers #1'
 slug: typescript-for-javascript-programmers-basic-types
+date: 2020-11-08
 cover: ./typescript.png
 generate-card: true
 imageShare: ./typescript-for-javascript-programmers-basic-types-share.png
