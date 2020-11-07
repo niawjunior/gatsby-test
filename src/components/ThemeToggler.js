@@ -6,7 +6,7 @@ import Switch from 'react-switch'
 import moonIcon from '../../static/moon-icon.svg'
 import sunIcon from '../../static/sun-icon.svg'
 
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 const SwitchToggle = styled.div`
   @media only screen and (max-width: 900px) {
@@ -15,7 +15,7 @@ const SwitchToggle = styled.div`
 
   position: absolute;
   z-index: 9999;
-  top: 15px;
+  margin-top: -43px;
   right: 10px;
 `
 const ThemeToggle = () => {
