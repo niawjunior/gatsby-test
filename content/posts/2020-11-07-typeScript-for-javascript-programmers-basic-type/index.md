@@ -25,6 +25,7 @@ tags:
   - [Null-กับ-Undefined](/typescript-for-javascript-programmers-basic-types#null-กับ-undefined)
   - [Never](/typescript-for-javascript-programmers-basic-types#never)
   - [Object](/typescript-for-javascript-programmers-basic-types#object)
+  - [Type-assertions](/typescript-for-javascript-programmers-basic-types#type-assertions)
 
 อย่างที่รู้กันนะครับว่า TypeScript เป็น SuperSet ของ JavaScript กล่าวคือ TypeScript สามารถใช้ความสามารถ ที่มีของ JavaScript ได้ทั้งหมด พร้อมทั้งยังเพิ่มความสามารถให้กับ JavaScript ได้อีกด้วย โดยสิ่งที่เพิ่มเข้ามาหลักๆเลยคือ Type System ที่จะเข้ามาช่วยในการจัดการเรื่อง Type นั่นเองครับ
 <br/>
