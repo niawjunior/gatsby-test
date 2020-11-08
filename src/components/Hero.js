@@ -27,6 +27,7 @@ const HeroTitle = styled.h1`
   font-weight: 700;
   font-size: 3rem;
   margin: 10px 50px;
+  word-break: break-word;
   color: ${colors.white};
   text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.85);
 `
