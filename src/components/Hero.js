@@ -14,23 +14,23 @@ const HeroContainer = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
 `
 
 const TitleContainer = styled.div`
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 80%;
+  width: 100%;
   text-align: center;
 `
 
 const HeroTitle = styled.h1`
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.5rem;
   word-break: break-word;
   color: ${colors.white};
   text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.85);
