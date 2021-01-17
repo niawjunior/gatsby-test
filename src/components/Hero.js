@@ -14,19 +14,23 @@ const HeroContainer = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 `
 
 const TitleContainer = styled.div`
-  display: table-cell;
-  vertical-align: middle;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
   text-align: center;
-  width: 100%;
 `
 
 const HeroTitle = styled.h1`
   font-weight: 700;
   font-size: 3rem;
-  margin: 10px 50px;
   word-break: break-word;
   color: ${colors.white};
   text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.85);
@@ -44,12 +48,15 @@ const Hero = props => {
   const heroImg = props.heroImg || fluid.src
 
   return (
-    <HeroContainer style={{ backgroundImage: `url("${heroImg}")` }}>
+    <div>
+      <HeroContainer
+        style={{ backgroundImage: `url("${heroImg}")` }}
+      ></HeroContainer>
       <TitleContainer>
         <HeroTitle>{props.title}</HeroTitle>
         {props.subTitle && <HeroSubTitle>{props.subTitle}</HeroSubTitle>}
       </TitleContainer>
-    </HeroContainer>
+    </div>
   )
 }
 
