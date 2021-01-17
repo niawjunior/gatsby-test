@@ -78,25 +78,9 @@ const Footer = () => {
           </p>
           <p className="footer-item-text">
             Made with{' '}
-            <a
-              href="https://webring.wonderful.software#jskhamkham.com"
-              title="วงแหวนเว็บ"
-              style={{ position: 'relative' }}
-            >
-              <img
-                alt="วงแหวนเว็บ"
-                width="32"
-                height="32"
-                src="https://webring.wonderful.software/webring.svg"
-              />
-              <span
-                role="img"
-                aria-label={`Icon love`}
-                style={{ position: 'absolute', left: '8px', top: '1px' }}
-              >
-                ❤️
-              </span>{' '}
-            </a>
+            <span role="img" aria-label={`Icon love`}>
+              ❤️
+            </span>{' '}
             by{' '}
             <a
               className="footer-link"
